@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>my vuejs learning process...</title>
+
+</head>
+<body>
+
+
+  <!--example 1-->
+  <div id="app" v-text="message"></div>
+
+  <!--example 2-->
+  <div id="app-2" v-text="message2"></div>
+
+
+  <!--example3-->
+  <div id="app-3">
+    <p v-if="isVisiable">
+      you can see me only if the variable isVisible = true
+    </p>
+  </div>
+
+  <!--example4-->
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos" v-text="todo"></li>
+    </ol>
+  </div>
+
+
+  <!--example5-->
+
+  <div id="app-5">
+
+    <p v-text="message"></p>
+    <button @click="reverseMessage">ReverseMessage</button>
+
+  </div>
+
+  <!--exmple6-->
+  <div id="app-6">
+    <p v-text="message"></p>
+    <input type="text" v-model="message">
+  </div>
+
+  <!--example7-->
+  <div id="app7">
+    <ol>
+      <haha
+             v-for="item in content"
+             :context="item"
+             :key="item.id"
+             >
+      </haha>
+    </ol>
+  </div>
+
+  <!--vue lib file...-->
+
+  <script src="../js/vue.js"></script>
+
+  <!--app js file...-->
+  <script src="./app.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>docs3 -components (R-D2)</title>
+</head>
+<body>
+  <h1 style="color:pink">
+    Components - Redirected by docs2 API..
+  </h2>
+
+  var data = {
+    counter: 0
+};
+  <!--example 1-->
+  <div id="app">
+   <my-header></my-header>
+  </div>
+
+
+  <!--example 2 counter with share data-->
+  <div id="app1">
+    <counter></counter>
+    <counter></counter>
+    <counter></counter>
+  </div>
+
+
+
+  <!--example 3 props-->
+  <div id="app3">
+    <child message="hello"></child>
+    <child message="haha"></child>
+  </div>
+
+  <div id="app4">
+    <input v-model="dMsg"/> <br>
+    <dchild :d-msg-c="dMsg"></dchild>
+  </div>
+
+  <!--vuejs core lib file -->
+  <script src="../js/vue.js"></script>
+
+  <!--appjs file-->
+  <script src="./app.js"></script>
+</body>
+</html>
