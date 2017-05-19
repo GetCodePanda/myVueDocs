@@ -82,8 +82,31 @@ new Vue({
 
 
 // one way of data flow ..
-// example 4
+// example  5
 
-// test for git
+
+Vue.component('one-way-data-flow', {
+    props:['initialCounter'],
+    template:`<li>{{this.increament}}</li>`,
+    data:function(){
+        return {
+            counter : this.initialCounter
+            };
+    },
+    computed:{
+        increament:function(){
+            return this.initialCounter + 1;
+        }
+    }
+});
+
+new Vue({
+    el:"#app5",
+    data:{
+        counter:0
+    }
+});
+
+
 
 

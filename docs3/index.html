@@ -25,8 +25,6 @@
     <counter></counter>
   </div>
 
-
-
   <!--example 3 props-->
   <div id="app3">
     <child message="hello"></child>
@@ -36,6 +34,16 @@
   <div id="app4">
     <input v-model="dMsg"/> <br>
     <dchild :d-msg-c="dMsg"></dchild>
+  </div>
+
+
+  <!--example 5 one way of data flow .. -->
+
+  <div id="app5">
+    <one-way-data-flow
+      :initial-counter="counter"
+    >
+    </one-way-data-flow>
   </div>
 
   <!--vuejs core lib file -->
